@@ -1,4 +1,4 @@
-import { Box, CssBaseline, Typography } from "@mui/material";
+import { Box, colors, CssBaseline, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 export default function NotFound() {
   return (
@@ -9,10 +9,13 @@ export default function NotFound() {
           justifyContent: "center",
           alignItems: "center",
           color: "red",
-          height: 400,
+          bgcolor: "black",
+          padding:"22% 0"
         }}
       >
-        <Typography variant="h5">Something went wrong ! </Typography>
+        <Typography variant="h5" sx={{
+          fontSize:"2rem"
+        }}>Something went wrong ! </Typography>
         <Link to="/">Go Home ...</Link>
       </Box>
       <CssBaseline />
